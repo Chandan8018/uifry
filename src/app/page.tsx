@@ -9,6 +9,8 @@ import {
 } from "react-icons/pi";
 import { TbHexagon3D } from "react-icons/tb";
 import { MdCircleNotifications } from "react-icons/md";
+import { Spotlight } from "@/components/ui/Spotlight";
+
 
 export default function Home() {
   return (
@@ -16,7 +18,10 @@ export default function Home() {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {/*Grid - 1 */}
         <div className='relative flex flex-col gap-5 mt-14'>
-          
+          <Spotlight
+            className='-top-40 left-0 md:left-60 md:-top-20'
+            fill='#ff5555'
+          />
           <h1 className='text-5xl font-bold z-20'>
             Make The Best
             <br />
@@ -52,6 +57,7 @@ export default function Home() {
             <div className='h-[360px] w-[360px] border-solid border-[1px] border-black dark:border-white absolute top-7 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
             <div className='h-[360px] w-[360px] border-solid border-[1px] border-black dark:border-white absolute top-14 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
           </div>
+          
           <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative'>
             <Image
               src='/iPhone-1.png'
@@ -104,9 +110,7 @@ export default function Home() {
           <div>
             <span className='flex justify-start items-center gap-1'>
               <PiStarFourBold className='w-5 h-5 text-[#ff5555]' />
-              <h2 className='font-bold  text-xl'>
-                Budgeting Intervals
-              </h2>
+              <h2 className='font-bold  text-xl'>Budgeting Intervals</h2>
             </span>
             <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
               Cum Et Convallis Risus Placerat Aliquam, Nuno. Scelerisque Aliquet
@@ -116,9 +120,7 @@ export default function Home() {
           <div>
             <span className='flex justify-start items-center gap-1'>
               <TbHexagon3D className='w-5 h-5 text-[#ff5555]' />
-              <h2 className='font-bold  text-xl'>
-                Budgeting Intervals
-              </h2>
+              <h2 className='font-bold  text-xl'>Budgeting Intervals</h2>
             </span>
             <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
@@ -128,9 +130,7 @@ export default function Home() {
           <div>
             <span className='flex justify-start items-center gap-1'>
               <PiCubeTransparentLight className='w-5 h-5 text-[#ff5555]' />
-              <h2 className='font-bold  text-xl'>
-                Budgeting Intervals
-              </h2>
+              <h2 className='font-bold  text-xl'>Budgeting Intervals</h2>
             </span>
             <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
               Cum Et Convallis Risus Placerat Aliquam, Nuno. Scelerisque Aliquet
@@ -147,9 +147,7 @@ export default function Home() {
 
           <span className='flex justify-start items-center gap-1'>
             <MdCircleNotifications className='w-8 h-8 text-[#ff5555]' />
-            <h2 className='font-bold text-xl'>
-              Clever Notifications
-            </h2>
+            <h2 className='font-bold text-xl'>Clever Notifications</h2>
           </span>
           <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quis
@@ -283,7 +281,9 @@ export default function Home() {
               className='absolute top-28 right-52 z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
             />
             <div className='w-10 h-10 rounded-full bg-[#ff5555] flex justify-center items-center absolute top-[190px] left-[235px] z-40'>
-              <span className='font-bold text-white dark:text-black text-4xl mt-3'>❝</span>
+              <span className='font-bold text-white dark:text-black text-4xl mt-3'>
+                ❝
+              </span>
             </div>
           </div>
         </div>
