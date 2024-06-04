@@ -1,113 +1,434 @@
+import { Button } from "@/components/ui/moving-border";
 import Image from "next/image";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { RiPlayCircleLine } from "react-icons/ri";
+import {
+  PiStarFourBold,
+  PiCubeTransparentLight,
+  PiStarFourFill,
+} from "react-icons/pi";
+import { TbHexagon3D } from "react-icons/tb";
+import { MdCircleNotifications } from "react-icons/md";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main className='min-h-screen md:max-w-6xl md:mx-auto px-6 md:px-0'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        {/*Grid - 1 */}
+        <div className='relative flex flex-col gap-5 mt-14'>
+          
+          <h1 className='text-5xl font-bold z-20'>
+            Make The Best
+            <br />
+            Financial Decisions
+          </h1>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Cum Et Convallis Risus Placerat Aliquam, Nuno. Scelerisque Aliquet
+            Faucibus Tincidunt Eu Adipiscing Socils Arcu Lorem Porttiton
+          </p>
+          <div className='flex justify-start gap-10'>
+            <Button
+              borderRadius='4px'
+              className='bg-black text-white border-slate-800 rounded-[3px]'
+            >
+              Get Started <IoIosArrowRoundForward className='w-7 h-5' />
+            </Button>
+            <span className='flex justify-center items-center gap-1 text-xl'>
+              <RiPlayCircleLine className='h-7 w-7' /> Watch Video
+            </span>
+          </div>
+          <Image
+            src='/Group35924.png'
+            alt='hero image'
+            width={420}
+            height={250}
+            className='-mt-5'
+          />
+        </div>
+        {/*Grid - 2 */}
+        <div>
+          <div className='max-h-[400px] max-w-[400px] relative md:top-14 left-24 z-10'>
+            <div className='h-[360px] w-[360px] border-solid border-[1px] border-black dark:border-white absolute top-0 right-0 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[360px] w-[360px] border-solid border-[1px] border-black dark:border-white absolute top-7 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[360px] w-[360px] border-solid border-[1px] border-black dark:border-white absolute top-14 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+          </div>
+          <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative'>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src='/iPhone-1.png'
+              alt='I-Phone 13 pro'
+              width={400}
+              height={500}
+              className='absolute top-0 left-0 z-40'
             />
-          </a>
+            <Image
+              src='/iPhone-2.png'
+              alt='I-Phone 13 pro'
+              width={400}
+              height={500}
+              className='absolute top-10 left-20 z-30'
+            />
+            <Image
+              src='/iPhone-1.png'
+              alt='I-Phone 13 pro'
+              width={400}
+              height={500}
+              className='absolute top-20 left-40 z-20'
+            />
+          </div>
+        </div>
+        {/*Grid - 3 */}
+        <div className='ml-16 md:ml-0'>
+          <div className='max-h-[400px] max-w-[400px] relative z-10'>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-0 right-0 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-5 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-10 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+          </div>
+          <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative z-20'>
+            <Image
+              src='/iPhone-3.png'
+              alt='I-Phone 13 pro'
+              width={355}
+              height={380}
+              className='absolute -top-9 left-12 z-30'
+            />
+          </div>
+        </div>
+        {/*Grid - 4 */}
+        <div className='flex flex-col gap-5 -mt-12 md:-mt-0'>
+          <div>
+            <h3 className='text-lg font-semibold text-[#ff5555] tracking-widest'>
+              FEATURES
+            </h3>
+            <h1 className='text-5xl font-bold'>Uifry Premium</h1>
+          </div>
+          <div>
+            <span className='flex justify-start items-center gap-1'>
+              <PiStarFourBold className='w-5 h-5 text-[#ff5555]' />
+              <h2 className='font-bold  text-xl'>
+                Budgeting Intervals
+              </h2>
+            </span>
+            <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+              Cum Et Convallis Risus Placerat Aliquam, Nuno. Scelerisque Aliquet
+              Faucibus Tincidunt Eu Adipiscing Socils Arcu Lorem Porttiton
+            </p>
+          </div>
+          <div>
+            <span className='flex justify-start items-center gap-1'>
+              <TbHexagon3D className='w-5 h-5 text-[#ff5555]' />
+              <h2 className='font-bold  text-xl'>
+                Budgeting Intervals
+              </h2>
+            </span>
+            <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              eos impedit reiciendis explicabo labore debitis a nihil.
+            </p>
+          </div>
+          <div>
+            <span className='flex justify-start items-center gap-1'>
+              <PiCubeTransparentLight className='w-5 h-5 text-[#ff5555]' />
+              <h2 className='font-bold  text-xl'>
+                Budgeting Intervals
+              </h2>
+            </span>
+            <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+              Cum Et Convallis Risus Placerat Aliquam, Nuno. Scelerisque Aliquet
+              Faucibus Tincidunt Eu Adipiscing Socils Arcu Lorem Porttiton
+            </p>
+          </div>
+        </div>
+        {/*Grid - 5 */}
+        <div className='md:mt-14 flex flex-col gap-3'>
+          <h3 className='text-lg font-semibold text-[#ff5555] tracking-widest'>
+            ADVATNAGES
+          </h3>
+          <h1 className='text-5xl font-bold '>Why Choose Uifry?</h1>
+
+          <span className='flex justify-start items-center gap-1'>
+            <MdCircleNotifications className='w-8 h-8 text-[#ff5555]' />
+            <h2 className='font-bold text-xl'>
+              Clever Notifications
+            </h2>
+          </span>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quis
+            fugit veritatis doloribus praesentium eos quaerat dolorum vel,
+            consequuntur dolorem ab adipisci dolores sit numquam? Quibusdam
+            maxime nisi adipisci eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Suscipit, dolores repellat deserunt alias fugit
+            accusamus voluptate ratione facere consequatur non. Ratione dolorem
+            adipisci voluptate tempore cumque mollitia laboriosam expedita
+            placeat.
+          </p>
+        </div>
+        {/*Grid - 6 */}
+        <div className='ml-14 md:ml-0'>
+          <div className='max-h-[400px] max-w-[400px] relative z-10'>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-0 right-0 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-5 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-10 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+          </div>
+          <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative z-20'>
+            <Image
+              src='/iPhone-4.png'
+              alt='I-Phone 13 pro'
+              width={355}
+              height={380}
+              className='absolute -top-9 left-12 z-30'
+            />
+            <Image
+              src='/OnHold.png'
+              alt='I-Phone 13 pro'
+              width={200}
+              height={80}
+              className='absolute top-40 left-40 z-40'
+            />
+          </div>
+        </div>
+        {/*Grid - 7 */}
+        <div className='ml-14 md:ml-0'>
+          <div className='max-h-[400px] max-w-[400px] relative z-10'>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-0 right-0 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-5 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[370px] w-[380px] border-solid border-[1px] border-black dark:border-white absolute top-10 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+          </div>
+          <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative z-20'>
+            <Image
+              src='/iPhone-3.png'
+              alt='I-Phone 13 pro'
+              width={355}
+              height={380}
+              className='absolute -top-9 left-12 z-30'
+            />
+            <Image
+              src='/card.png'
+              alt='card'
+              width={200}
+              height={60}
+              className='absolute top-24 left-[110px] z-40'
+            />
+          </div>
+        </div>
+        {/*Grid - 8 */}
+        <div className=' md:mt-14 flex flex-col gap-3'>
+          <span className='flex justify-start items-center gap-1'>
+            <div className='w-8 h-8 rounded-full bg-[#ff5555] flex justify-center items-center'>
+              <PiStarFourFill className='w-4 h-4 text-white' />
+            </div>
+
+            <h2 className='font-bold text-xl'>Fully Customizable</h2>
+          </span>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quis
+            fugit veritatis doloribus praesentium eos quaerat dolorum vel,
+            consequuntur dolorem ab adipisci dolores sit numquam? Quibusdam
+            maxime nisi adipisci eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Suscipit, dolores repellat deserunt alias fugit
+            accusamus voluptate ratione facere consequatur non. Ratione dolorem
+            adipisci voluptate tempore cumque mollitia laboriosam expedita
+            placeat.
+          </p>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='mt-12'>
+        <h3 className='text-lg font-semibold tracking-widest text-center'>
+          TESTIMONIAL
+        </h3>
+        <h1 className='text-5xl font-bold text-center'>
+          What Our Users <br /> Say About Us?
+        </h1>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        <div className='md:mt-20 mt-12 ml-14 md:ml-0'>
+          <div className='max-h-[400px] max-w-[400px] relative z-10'>
+            <div className='h-[350px] w-[350px] border-solid border-[1px] border-black dark:border-white absolute top-0 right-0 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[350px] w-[350px] border-solid border-[1px] border-black dark:border-white absolute top-5 right-5 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+            <div className='h-[350px] w-[350px] border-solid border-[1px] border-black dark:border-white absolute top-10 right-10 rounded-full rounded-tl-[3000px] rounded-br-[3000px]'></div>
+          </div>
+          <div className='md:max-h-[500px] md:max-w-[600px] h-[500px] w-[600px] relative z-20'>
+            <Image
+              src='/Group28.png'
+              alt='profile pic'
+              width={100}
+              height={100}
+              className='absolute top-40 left-40 z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
+            />
+            <Image
+              src='/Group27.png'
+              alt='profile pic'
+              width={50}
+              height={50}
+              className='absolute top-6 left-10 z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
+            />
+            <Image
+              src='/Group29.png'
+              alt='profile pic'
+              width={50}
+              height={50}
+              className='absolute top-[310px] right-[214px] z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
+            />
+            <Image
+              src='/Group30.png'
+              alt='profile pic'
+              width={50}
+              height={50}
+              className='absolute top-60 left-10 z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
+            />
+            <Image
+              src='/Group31.png'
+              alt='profile pic'
+              width={50}
+              height={50}
+              className='absolute top-28 right-52 z-30 border-solid border-[1px] border-black dark:border-white rounded-full'
+            />
+            <div className='w-10 h-10 rounded-full bg-[#ff5555] flex justify-center items-center absolute top-[190px] left-[235px] z-40'>
+              <span className='font-bold text-white dark:text-black text-4xl mt-3'>❝</span>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col gap-5 md:mt-24'>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quis
+            fugit veritatis doloribus praesentium eos quaerat dolorum vel,
+            consequuntur dolorem ab adipisci dolores sit numquam? Quibusdam
+            maxime nisi adipisci eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Suscipit, dolores repellat deserunt alias fugit
+            accusamus voluptate ratione facere consequatur non. Ratione dolorem
+            adipisci voluptate tempore cumque mollitia laboriosam expedita
+            placeat.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className='flex justify-start gap-2'>
+            <Image
+              src='/Group28.png'
+              alt='profile pic'
+              width={40}
+              height={40}
+            />
+            <div className='flex justify-start gap-2 py-1'>
+              <Image
+                src='/Group27.png'
+                alt='profile pic'
+                width={30}
+                height={30}
+                className='opacity-50'
+              />
+              <Image
+                src='/Group29.png'
+                alt='profile pic'
+                width={30}
+                height={30}
+                className='opacity-50'
+              />
+              <Image
+                src='/Group30.png'
+                alt='profile pic'
+                width={30}
+                height={30}
+                className='opacity-50'
+              />
+              <Image
+                src='/Group31.png'
+                alt='profile pic'
+                width={30}
+                height={30}
+                className='opacity-50'
+              />
+            </div>
+          </div>
+          <h3 className='font-medium text-md'>Nick Jonas</h3>
+        </div>
       </div>
+      <div className='md:mt-0 mt-12'>
+        <h3 className='text-lg font-semibold text-[#ff5555] tracking-widest'>
+          FAQ
+        </h3>
+        <h1 className='text-5xl font-bold'>
+          Frequently Asked
+          <br />
+          Questions
+        </h1>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-10'>
+        <div className='flex flex-col gap-3 p-5 bg-[#ff5555] rounded-md'>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-3 p-5 '>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-3 p-5 '>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-3 p-5 bg-[#ff5555] rounded-md'>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-3 p-5 bg-[#ff5555] rounded-md'>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-3 p-5 '>
+          <h2 className='font-bold text-xl'>
+            The Best Financial Accounting
+            <br />
+            App Ever!
+          </h2>
+          <p className='text-[14px] text-gray-600 dark:text-gray-400 font-medium'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            aliquam voluptas deserunt, quidem commodi.
+          </p>
+        </div>
+      </div>
+      <Image
+        src='/Frame.png'
+        alt='frame'
+        width={1200}
+        height={150}
+        className='my-20'
+      />
     </main>
   );
 }
