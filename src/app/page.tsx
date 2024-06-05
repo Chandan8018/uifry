@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </div>
         {/*Grid - 5 */}
-        <div className='md:mt-14 flex flex-col gap-3'>
+        <div className='flex items-center justify-center flex-col gap-3'>
           <h3 className='text-lg font-semibold text-[#ff5555] tracking-widest'>
             ADVATNAGES
           </h3>
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         </div>
         {/*Grid - 8 */}
-        <div className=' md:mt-14 flex flex-col gap-3'>
+        <div className=' flex items-center justify-center flex-col gap-3'>
           <span className='flex justify-start items-center gap-1'>
             <div className='w-8 h-8 rounded-full bg-[#ff5555] flex justify-center items-center'>
               <PiStarFourFill className='w-4 h-4 text-white' />
@@ -229,7 +229,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='mt-12'>
+      <div className=''>
         <h3 className='text-lg font-semibold tracking-widest text-center'>
           TESTIMONIAL
         </h3>
@@ -287,7 +287,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-5 md:mt-24'>
+        <div className='flex items-center justify-center flex-col gap-5 md:mt-24'>
           <h2 className='font-bold text-xl'>
             The Best Financial Accounting
             <br />
@@ -425,7 +425,7 @@ export default function Home() {
       <Image
         src='/Frame.png'
         alt='frame'
-        width={1200}
+        width={1000}
         height={150}
         className='my-20'
       />

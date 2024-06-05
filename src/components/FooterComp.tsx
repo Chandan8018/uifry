@@ -23,7 +23,7 @@ import { Button} from "./ui/moving-border";
 
 function FooterComp() {
   return (
-    <Footer container>
+    <Footer container className="dark:bg-[#121212]">
       <div className='w-full'>
         <div className='grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1'>
           

@@ -8,7 +8,7 @@ import ThemeSwitch from "./ThemeSwitch";
 
 export function Header() {
   return (
-    <Navbar fluid rounded className="md:pl-14 md:pr-20">
+    <Navbar fluid rounded className="md:max-w-5xl md:mx-auto md:pl-14 md:pr-20 dark:bg-[#121212]">
       <Navbar.Brand href="https://flowbite-react.com" className="">
         <BsFire className="h-8 w-8 text-[#ff5555]"/>
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">uifry™</span>
@@ -19,7 +19,7 @@ export function Header() {
         className="bg-black text-white border-slate-800 rounded-[3px]">Download</Button>
         <Navbar.Toggle />
       </div>
-      <Navbar.Collapse className="md:relative md:-left-48">
+      <Navbar.Collapse className="md:relative md:-left-20">
         <Navbar.Link href="#" className="font-bold text-[1.2vw] text-[#ff5555] dark:text-[#ff5555]">
           Home
         </Navbar.Link>
