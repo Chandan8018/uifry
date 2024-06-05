@@ -14,7 +14,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
-    <main className='min-h-screen md:max-w-4xl md:mx-auto px-6 md:px-0'>
+    <main className='min-h-screen md:max-w-5xl md:mx-auto px-6 md:px-0'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {/*Grid - 1 */}
         <div className='relative flex flex-col gap-5 mt-14'>
